@@ -1,0 +1,20 @@
+package com.recommendation.PaymentService.dto;
+
+public class OrderEvent {
+
+    private Long orderId;
+    private String status;
+
+    public OrderEvent() {}
+
+    public OrderEvent(Long orderId, String status) {
+        this.orderId = orderId;
+        this.status = status;
+    }
+
+    public Long getOrderId() { return orderId; }
+    public String getStatus() { return status; }
+
+    public void setOrderId(Long orderId) { this.orderId = orderId; }
+    public void setStatus(String status) { this.status = status; }
+}
